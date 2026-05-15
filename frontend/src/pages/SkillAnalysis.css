@@ -1,0 +1,116 @@
+.skill-container {
+  min-height: 100vh;
+  background: #031c3d;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.skill-title {
+  text-align: center;
+  font-size: 40px;
+  color: #4f46e5;
+  margin-bottom: 30px;
+}
+
+.skill-card {
+  background: rgb(27, 25, 25);
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.domain-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #8a6c6c;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.skills-heading {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.skill-checkbox {
+  background: #eef2ff;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.skill-checkbox:hover {
+  background: #dbe4ff;
+}
+
+.skill-checkbox input {
+  margin-right: 10px;
+  
+}
+
+.analyze-btn {
+  width: 100%;
+  padding: 14px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.analyze-btn:hover {
+  background: #4338ca;
+}
+
+.result-card {
+  margin-top: 30px;
+  background: #0f1012;
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid #ddd;
+}
+
+.result-title {
+  color: #4f46e5;
+  margin-bottom: 20px;
+}
+
+.result-card {
+  margin-top: 30px;
+  background: #000;
+  border-radius: 12px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.progress-bar {
+  height: 100%;
+  background: #4f46e5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  transition: width 0.5s ease-in-out;
+}

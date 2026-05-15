@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ai-container {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 30px;
+
+  background: #0b1220;
+
+  font-family: system-ui, -apple-system, Segoe UI, Roboto;
+}
+
+/* CARD */
+.ai-card {
+
+  width: 100%;
+
+  max-width: 780px;
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: #111827;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  border: 1px solid #1f2937;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+  color: #e5e7eb;
+}
+
+/* HEADER */
+.ai-card h1 {
+
+  text-align: center;
+
+  font-size: 28px;
+
+  margin-bottom: 8px;
+
+  color: #ffffff;
+}
+
+.ai-card p {
+
+  text-align: center;
+
+  color: #9ca3af;
+
+  margin-bottom: 25px;
+
+  font-size: 14px;
+}
+
+/* INPUTS */
+.ai-card select,
+.ai-card textarea {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  margin-bottom: 15px;
+
+  background: #0f172a;
+
+  border: 1px solid #1f2937;
+
+  color: #e5e7eb;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.ai-card textarea {
+
+  height: 100px;
+
+  resize: none;
+}
+
+/* FOCUS */
+.ai-card select:focus,
+.ai-card textarea:focus {
+
+  border-color: #6366f1;
+}
+
+/* BUTTON */
+.ai-card button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  background: #6366f1;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.ai-card button:hover {
+
+  background: #4f46e5;
+}
+
+/* RESULT */
+.result-box {
+
+  margin-top: 20px;
+
+  padding: 20px;
+
+  border-radius: 14px;
+
+  background: #0f172a;
+
+  border: 1px solid #1f2937;
+}
+
+/* HEADINGS */
+.result-box h2 {
+
+  font-size: 18px;
+
+  margin: 15px 0 10px;
+
+  color: #ffffff;
+}
+
+/* TAGS */
+.tags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.tag {
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  background: #1f2937;
+
+  color: #cbd5e1;
+
+  font-size: 12px;
+}
+
+/* LISTS */
+.result-box ul,
+.result-box ol {
+
+  padding-left: 18px;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+}
+
+.result-box li {
+
+  margin-bottom: 8px;
+
+  line-height: 1.4;
+}
+
+/* ROADMAP ITEMS */
+.result-box ol li {
+
+  padding: 10px;
+
+  background: #0b1220;
+
+  border-left: 3px solid #6366f1;
+
+  border-radius: 8px;
+
+  margin-bottom: 8px;
+}
+
+/* SCROLLBAR */
+.ai-card::-webkit-scrollbar {
+
+  width: 6px;
+}
+
+.ai-card::-webkit-scrollbar-thumb {
+
+  background: #374151;
+
+  border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  .ai-card {
+
+    padding: 20px;
+  }
+
+  .ai-card h1 {
+
+    font-size: 22px;
+  }
+}

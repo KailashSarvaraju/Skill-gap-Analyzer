@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+.home {
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+}
+
+.logo {
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #0ea5e9;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  gap: 50px;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-left p {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+}
+
+.primary-btn:hover {
+  background: #0ea5e9;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.secondary-btn:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+/* Cards */
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s;
+  border: 1px solid #334155;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+.card p {
+  color: #cbd5e1;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+  }
+}
