@@ -265,3 +265,54 @@
 
   margin-bottom: 10px;
 }
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .container,
+  .card,
+  .dashboard,
+  .profile-card,
+  .login-box,
+  .signup-box {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+  }
+
+  .hero,
+  .navbar,
+  .profile-header,
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons,
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}
