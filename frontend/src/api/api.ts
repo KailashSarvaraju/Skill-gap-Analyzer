@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
- baseURL: "http://localhost:8000",
+  baseURL:
+    "https://skill-gap-analyzer-i1ep.onrender.com"
 });
 
-export default API;
+export default API; 
