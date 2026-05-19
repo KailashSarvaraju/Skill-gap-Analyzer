@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { Home } from "lucide-react";
 
 import API from "../api/api";
-import "./Login.css";
+import "./login.css";
 
 export default function Login() {
   const navigate = useNavigate();

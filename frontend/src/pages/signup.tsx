@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import API from "../api/api";
 
-import "./Signup.css";
+import "./signup.css";
 
 export default function Signup() {
 
