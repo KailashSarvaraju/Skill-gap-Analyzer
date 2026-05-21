@@ -585,3 +585,71 @@ def get_profile(
         }
 
     return profile
+
+# =========================================
+# AI RECOMMENDATIONS
+# =========================================
+@app.post("/ai-recommendations")
+def ai_recommendations(data: dict):
+
+    skills = data.get("skills", [])
+
+    domain = data.get("domain", "")
+
+    recommendations = []
+
+    projects = []
+
+    roadmap = []
+
+    if domain == "Web Development":
+
+        if "react" not in skills:
+            recommendations.append("Learn React")
+
+        if "node" not in skills:
+            recommendations.append("Learn Node.js")
+
+        projects = [
+            "Portfolio Website",
+            "E-commerce App",
+            "Blog Platform"
+        ]
+
+        roadmap = [
+            "Learn HTML/CSS",
+            "Master JavaScript",
+            "Learn React",
+            "Build Full Stack Projects",
+            "Apply for internships"
+        ]
+
+    elif domain == "Data Science":
+
+        recommendations = [
+            "Learn Pandas",
+            "Learn Machine Learning",
+            "Practice SQL"
+        ]
+
+        projects = [
+            "Sales Prediction",
+            "Data Dashboard",
+            "ML Classification App"
+        ]
+
+        roadmap = [
+            "Learn Python",
+            "Master Data Analysis",
+            "Learn Machine Learning",
+            "Build ML Projects"
+        ]
+
+    return {
+
+        "recommended_skills": recommendations,
+
+        "project_ideas": projects,
+
+        "career_roadmap": roadmap
+    }
